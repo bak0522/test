@@ -11,7 +11,7 @@ func main() {
 	userHandler := &UserHandler{
 		userDB: make([]string, 0),
 	}
-	http.Handle("/user", userHandler)
+	http.Handle("/user2", userHandler)
 
 	http.ListenAndServe(":8080", nil)
 }
